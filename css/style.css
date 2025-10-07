@@ -1,5 +1,5 @@
 :root {
-  --basic-font-family: "Roboto", sans-serif;
+  --basic-font-family: 'Lato', sans-serif;
   --basic-font-size: 16px;
   --basic-font-weight: 400;
   --basic-line-height: 1.5;
@@ -75,6 +75,7 @@ body {
 }
 
 .logo {
+  font-family: 'Courgette', cursive;
   display: inline-block;
   font-style: italic;
   font-size: 32px;
@@ -101,10 +102,12 @@ body {
 }
 
 .main_title {
-  max-width: 630px;
+  font-family: 'Limelight', sans-serif;
+  max-width: 740px;
   color: #fff;
   text-align: center;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .color-red {
