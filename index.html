@@ -14,7 +14,11 @@
     <div class="container">
       <div class="wrap flex items-center justify-between">
         <a href="#header" class="logo">
-          <img srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x" src="./images/Logo.png" alt="GreenShop Logo" />
+          <picture>
+            <source srcset="./images/Logo.webp 1x, ./images/Logo@2x.webp 2x" type="image/webp" />
+            <source srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x" type="image/png" />
+            <img src="./images/Logo.png" alt="GreenShop Logo" width="150" />
+          </picture>
         </a>
         <nav class="nav">
           <ul class="menu flex">
@@ -70,11 +74,21 @@
   <main>
     <section class="main-banner">
       <div class="container">
-        <h1 class="main-title uppercase">Let’s Make a Better <span class="text-primary">Planet</span></h1>
-        <p class="description">
-          We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an
-          unique Urban Jungle. Order your favorite plants!
-        </p>
+        <div class="wrapper flex items-center justify-between">
+          <div class="text-wrap">
+            <p class="intro uppercase">Welcome to GreenShop</p>
+            <h1 class="main-title uppercase">Let’s Make a Better <span class="text-primary">Planet</span></h1>
+            <p class="description">
+              We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an
+              unique Urban Jungle. Order your favorite plants!
+            </p>
+            <button class="btn btn-green uppercase">Shop now</button>
+          </div>
+          <div class="image-wrap">
+            <img class="banner-plant" srcset="./images/banner-plant-big.png 1x, ./images/banner-plant-big@2x.png 2x"
+              src="./images/banner-plant-big.png" alt="Plant">
+          </div>
+        </div>
       </div>
     </section>
   </main>
